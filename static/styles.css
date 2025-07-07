@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  min-height: 100vh;
+  padding: 20px;
+  color: #ecf0f1;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #2c3e50;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border: 1px solid #34495e;
+}
+
+header {
+  background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+  color: #ecf0f1;
+  padding: 30px;
+  text-align: center;
+  border-bottom: 1px solid #34495e;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 300;
+  color: #ecf0f1;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.8;
+  color: #bdc3c7;
+}
+
+.canvas-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 30px;
+  flex-wrap: wrap;
+  background: #34495e;
+}
+
+.canvas-wrapper {
+  text-align: center;
+  background: #2c3e50;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  border: 1px solid #34495e;
+}
+
+.canvas-wrapper:first-child {
+  flex: 0 0 auto;
+  max-width: 400px;
+}
+
+.canvas-wrapper:last-child {
+  flex: 1;
+  max-width: 900px;
+}
+
+canvas {
+  border: 3px solid #34495e;
+  border-radius: 10px;
+  cursor: crosshair;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  background: #ecf0f1;
+}
+
+canvas:hover {
+  border-color: #5dade2;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+video {
+  border: 3px solid #34495e;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  background: #2c3e50;
+}
+
+video:hover {
+  border-color: #5dade2;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+button {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+  background: linear-gradient(135deg, #5dade2 0%, #3498db 100%);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+#clearCanvas {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+}
+
+#clearCanvas:hover {
+  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+  background: linear-gradient(135deg, #ec7063 0%, #e74c3c 100%);
+}
+
+.status {
+  background: #2c3e50;
+  padding: 20px 30px;
+  text-align: center;
+  font-weight: 600;
+  color: #bdc3c7;
+  border-top: 1px solid #34495e;
+}
+
+#statusText {
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .canvas-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  canvas {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  video {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .canvas-wrapper {
+    width: 100%;
+  }
+
+  .canvas-wrapper:first-child {
+    max-width: 350px;
+  }
+
+  .canvas-wrapper:last-child {
+    max-width: 650px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}
+
+/* Webcam specific styles */
+#webcamVideo {
+  display: block;
+  margin: 0 auto;
+}
+
+.canvas-wrapper:first-child button {
+  background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+  box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+}
+
+.canvas-wrapper:first-child button:hover {
+  box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+  background: linear-gradient(135deg, #58d68d 0%, #27ae60 100%);
+}

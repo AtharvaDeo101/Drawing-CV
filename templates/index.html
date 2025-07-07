@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCV Webcam Canvas App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>OpenCV Webcam Canvas App</h1>
+            <p>Webcam feed and drawing canvas</p>
+        </header>
+
+        <div class="canvas-container">
+            <div class="canvas-wrapper">
+                <h3>Webcam Feed</h3>
+                <video id="webcamVideo" width="320" height="240" autoplay></video>
+                <button id="startWebcam">Start Webcam</button>
+            </div>
+            
+            <div class="canvas-wrapper">
+                <h3>Drawing Canvas</h3>
+                <canvas id="drawingCanvas" width="800" height="600"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://docs.opencv.org/4.8.0/opencv.js"></script>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script></body>
+</html>
