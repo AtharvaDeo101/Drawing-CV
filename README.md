@@ -1,4 +1,4 @@
-# 🎨 Drawing-CV
+# Drawing-CV
 
 **Drawing-CV** is an interactive computer vision-based drawing application that allows users to draw in real time using hand gestures, a webcam, or other visual input methods. It combines the power of OpenCV with gesture recognition (or mouse input) to create a fun, intuitive, and creative experience.
 
