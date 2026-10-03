@@ -12,4 +12,3 @@
 - Color and brush size selection
 -  Save drawings to disk
 -  Clear canvas functionality
--  Lightweight and easy to install
