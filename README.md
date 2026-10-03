@@ -9,5 +9,3 @@
 -  Real-time video processing using OpenCV
 -  Draw using hand gestures or mouse
 -  Hand landmark detection (e.g., using Mediapipe)
-- Color and brush size selection
--  Save drawings to disk
