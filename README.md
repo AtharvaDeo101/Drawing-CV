@@ -11,4 +11,3 @@
 -  Hand landmark detection (e.g., using Mediapipe)
 - Color and brush size selection
 -  Save drawings to disk
--  Clear canvas functionality
