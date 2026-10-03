@@ -4,8 +4,5 @@
 
 ---
 
-## Features
-
--  Real-time video processing using OpenCV
 
 
